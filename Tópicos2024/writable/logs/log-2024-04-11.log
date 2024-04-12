@@ -1,0 +1,12 @@
+CRITICAL - 2024-04-11 17:45:56 --> TypeError: CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp\htdocs\Tópicos2024\system\Model.php on line 918
+[Method: GET, Route: ubicaciones]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1616.
+ 1 SYSTEMPATH\Model.php(918): CodeIgniter\Database\BaseBuilder->get('ubicacion')
+ 2 APPPATH\Controllers\Clima.php(17): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Clima->getUbicaciones()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Tópicos2024\\public\\index.php')
